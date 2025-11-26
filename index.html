@@ -29,176 +29,187 @@
     gtag('js', new Date());
     gtag('config','G-64FE63JQ3H');
   </script>
-
-  <style>
-    .brand{display:flex;align-items:center;gap:10px;font-weight:600}
-    .cc-logo{height:32px;width:32px;border-radius:999px;background:#38bdf8;display:flex;align-items:center;justify-content:center;font-size:12px;color:#020617;font-weight:800}
-    .list{margin:8px 0 0;padding-left:18px;font-size:14px;color:var(--muted)}
-    .list li{margin-bottom:4px}
-    .table-wrap{overflow-x:auto}
-  </style>
 </head>
 
-<body>
-<header class="nav">
-  <div class="brand">
-    <div class="cc-logo">CC</div>
-    <span>Wearable.creditcard</span>
-  </div>
-  <nav class="links">
-    <a href="https://fin.creditcard/">Collection</a>
-    <a href="https://tech.creditcard/wearables">Tech · Wearables</a>
-    <a href="https://choose.creditcard/">Choose</a>
-  </nav>
-</header>
+<body class="bg-slate-950 text-slate-100">
+  <!-- HEADER – samkjørt med resten av collection -->
+  <header class="site-header">
+    <div class="nav-inner max-w-6xl">
+      <div class="brand">
+        <div class="cc-logo">CC</div>
+        <div class="brand-text">
+          <span class="brand-title">Wearable.creditcard</span>
+          <span class="brand-subtitle">Rings · Watches · Bands · NFC</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="https://fin.creditcard/?utm_source=wearable.creditcard&utm_medium=nav&utm_campaign=collection">
+          Collection
+        </a>
+        <a href="https://tech.creditcard/?utm_source=wearable.creditcard&utm_medium=nav&utm_campaign=tech_wearables">
+          Tech · Wearables
+        </a>
+        <a href="https://choose.creditcard/?utm_source=wearable.creditcard&utm_medium=nav&utm_campaign=choose">
+          Choose
+        </a>
+      </nav>
+    </div>
+  </header>
 
-<div class="wrap">
+  <main class="cc-page">
+    <p class="cc-breadcrumb">Wearable.creditcard · NFC · Devices · Choose</p>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Pay with Rings, Watches & Bands</h1>
-    <p>How wearable devices store card tokens and let you tap to pay without plastic.</p>
-    <a class="cta"
-       href="https://choose.creditcard/compare?utm_source=wearable.creditcard&utm_medium=referral&utm_campaign=wearable_top">
-      Compare Wearable-Friendly Cards
-    </a>
-  </section>
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Pay with Rings, Watches &amp; Bands</h1>
+      <p class="hero-lead">
+        How wearable devices store card tokens and let you tap to pay without plastic.
+      </p>
+      <a class="cta"
+         href="https://choose.creditcard/?utm_source=wearable.creditcard&utm_medium=referral&utm_campaign=wearable_top">
+        Compare Wearable-Friendly Cards
+      </a>
+    </section>
 
-  <!-- What are wearable payments -->
-  <section class="section">
-    <h2>What are wearable card payments?</h2>
-    <p class="small">
-      Wearable payments let you tap a ring, watch, wristband or other device to pay,
-      using tokenized card details stored securely on or behind the device.
+    <!-- What are wearable payments -->
+    <section class="section">
+      <h2>What are wearable card payments?</h2>
+      <p class="small">
+        Wearable payments let you tap a ring, watch, wristband or other device to pay,
+        using tokenized card details stored securely on or behind the device.
+      </p>
+      <ul class="list">
+        <li>Payment rings linked to your card</li>
+        <li>Smartwatches with wallet support</li>
+        <li>Fitness bands with NFC</li>
+        <li>Passive wearables with embedded chips</li>
+      </ul>
+    </section>
+
+    <!-- Types of wearables -->
+    <section class="section">
+      <h2>Types of payment wearables</h2>
+      <div class="cluster-grid">
+        <div class="cluster-card">
+          <h3>Smartwatches</h3>
+          <p class="small">
+            Apple Watch, Wear OS and other watches running Apple Pay, Google Pay or bank wallets.
+          </p>
+        </div>
+        <div class="cluster-card">
+          <h3>Payment rings</h3>
+          <p class="small">
+            Discreet NFC rings linked to your card or account, great for travel and sports.
+          </p>
+        </div>
+        <div class="cluster-card">
+          <h3>Fitness bands</h3>
+          <p class="small">
+            Activity trackers with NFC wallets built in for quick tap-to-pay.
+          </p>
+        </div>
+        <div class="cluster-card">
+          <h3>Passive wearables</h3>
+          <p class="small">
+            Bracelets, key fobs or tags with embedded payment chips, no battery required.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section">
+      <h2>How wearables store card details</h2>
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+          <tr>
+            <th>Layer</th>
+            <th>Role</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Tokenization</td>
+            <td>Your real card number is replaced by a network token on the device.</td>
+          </tr>
+          <tr>
+            <td>Secure element</td>
+            <td>Hardware or secure enclave stores the token and keys.</td>
+          </tr>
+          <tr>
+            <td>Wallet / app</td>
+            <td>Manages cards, activation, lock/unlock and remote wipe.</td>
+          </tr>
+          <tr>
+            <td>NFC interface</td>
+            <td>Talks to the payment terminal using EMV contactless protocols.</td>
+          </tr>
+          <tr>
+            <td>Issuer &amp; network</td>
+            <td>Authorize transactions just like with a physical card.</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Why people use wearables -->
+    <section class="section">
+      <h2>Why choose a wearable payment device?</h2>
+      <ul class="list">
+        <li>Convenience: tap with your hand, no wallet or phone needed</li>
+        <li>Great for gyms, running, swimming and travel</li>
+        <li>Tokenized: your real card number is never shared with the merchant</li>
+        <li>Easy to lock or remove from the bank app</li>
+        <li>Often works anywhere contactless cards are accepted</li>
+      </ul>
+    </section>
+
+    <!-- Cluster links -->
+    <section class="section">
+      <h2>Explore wearables &amp; NFC in the collection</h2>
+      <div class="cluster-grid">
+        <a class="cluster-card"
+           href="https://tech.creditcard/?utm_source=wearable.creditcard&utm_medium=referral&utm_campaign=tech_wearables">
+          <h3>Tech.Creditcard · Wearables</h3>
+          <p class="small">Technical deep dive into wearable enablement.</p>
+        </a>
+        <a class="cluster-card"
+           href="https://nfc.creditcard/?utm_source=wearable.creditcard&utm_medium=referral&utm_campaign=nfc">
+          <h3>NFC.creditcard</h3>
+          <p class="small">NFC and contactless basics for cards and devices.</p>
+        </a>
+        <a class="cluster-card"
+           href="https://tokens.creditcard/?utm_source=wearable.creditcard&utm_medium=referral&utm_campaign=tokens">
+          <h3>Tokens.creditcard</h3>
+          <p class="small">Tokenization – the security layer behind wearables.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- CTA bottom -->
+    <section class="section">
+      <h2>Want a card that works with wearables?</h2>
+      <p class="small">
+        Wearable.creditcard explains the concept.<br />
+        To see which cards actually support rings, watches and bands:
+      </p>
+      <a class="cta"
+         href="https://choose.creditcard/?utm_source=wearable.creditcard&utm_medium=referral&utm_campaign=wearable_bottom">
+        Compare Cards on Choose.Creditcard
+      </a>
+    </section>
+  </main>
+
+  <!-- MINI FOOTER – samme som de andre minisidene -->
+  <footer class="mini-footer">
+    <p class="mini-footer-main">
+      © 2025 The CreditCard Collection — ronarn AS
     </p>
-    <ul class="list">
-      <li>• Payment rings linked to your card</li>
-      <li>• Smartwatches with wallet support</li>
-      <li>• Fitness bands with NFC</li>
-      <li>• Passive wearables with embedded chips</li>
-    </ul>
-  </section>
-
-  <!-- Types of wearables -->
-  <section class="section">
-    <h2>Types of payment wearables</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Smartwatches</h3>
-        <p class="small">
-          Apple Watch, Wear OS and other watches running Apple Pay / Google Pay or bank wallets.
-        </p>
-      </div>
-      <div class="card">
-        <h3>Payment rings</h3>
-        <p class="small">
-          Discreet NFC rings linked to your card or account, great for travel and sports.
-        </p>
-      </div>
-      <div class="card">
-        <h3>Fitness bands</h3>
-        <p class="small">
-          Activity trackers with NFC wallets built in for quick tap-to-pay.
-        </p>
-      </div>
-      <div class="card">
-        <h3>Passive wearables</h3>
-        <p class="small">
-          Bracelets, key fobs or tags with embedded payment chips, no battery required.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- How it works -->
-  <section class="section">
-    <h2>How wearables store card details</h2>
-    <div class="table-wrap">
-      <table class="table">
-        <thead>
-        <tr>
-          <th>Layer</th>
-          <th>Role</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>Tokenization</td>
-          <td>Your real card number is replaced by a network token on the device.</td>
-        </tr>
-        <tr>
-          <td>Secure element</td>
-          <td>Hardware or secure enclave stores the token and keys.</td>
-        </tr>
-        <tr>
-          <td>Wallet / app</td>
-          <td>Manages cards, activation, lock/unlock and remote wipe.</td>
-        </tr>
-        <tr>
-          <td>NFC interface</td>
-          <td>Talks to the payment terminal using EMV contactless protocols.</td>
-        </tr>
-        <tr>
-          <td>Issuer & network</td>
-          <td>Authorize transactions just like with a physical card.</td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- Why people use wearables -->
-  <section class="section">
-    <h2>Why choose a wearable payment device?</h2>
-    <ul class="list">
-      <li>• Convenience: tap with your hand, no wallet or phone needed</li>
-      <li>• Great for gyms, running, swimming and travel</li>
-      <li>• Tokenized: your real card number is never shared with the merchant</li>
-      <li>• Easy to lock or remove from the bank app</li>
-      <li>• Often works anywhere contactless cards are accepted</li>
-    </ul>
-  </section>
-
-  <!-- Cluster links -->
-  <section class="section">
-    <h2>Explore wearables & NFC in the collection</h2>
-    <div class="grid">
-      <a class="card"
-         href="https://tech.creditcard/wearables?utm_source=wearable.creditcard&utm_medium=referral">
-        <h3>Tech.Creditcard / Wearables</h3>
-        <p class="small">Technical deep dive into wearable enablement.</p>
-      </a>
-      <a class="card"
-         href="https://nfc.creditcard/?utm_source=wearable.creditcard&utm_medium=referral">
-        <h3>NFC.creditcard</h3>
-        <p class="small">NFC and contactless basics for cards and devices.</p>
-      </a>
-      <a class="card"
-         href="https://tokens.creditcard/?utm_source=wearable.creditcard&utm_medium=referral">
-        <h3>Tokens.creditcard</h3>
-        <p class="small">Tokenization – the security layer behind wearables.</p>
-      </a>
-    </div>
-  </section>
-
-  <!-- CTA bottom -->
-  <section class="section">
-    <h2>Want a card that works with wearables?</h2>
-    <p class="small">
-      Wearable.creditcard explains the concept.  
-      To see which cards actually support rings, watches and bands:
+    <p class="mini-footer-contact">
+      Contact: <a href="mailto:support@cc.creditcard">support@cc.creditcard</a>
     </p>
-    <a class="cta"
-       href="https://choose.creditcard/compare?utm_source=wearable.creditcard&utm_medium=referral&utm_campaign=wearable_bottom">
-      Compare Cards on Choose.Creditcard
-    </a>
-  </section>
-
-  <footer class="footer">
-    Part of <strong>The CreditCard Collection</strong> — by ronarn<br />
-    Contact: <a href="mailto:support@ronarn.com">support@ronarn.com</a>
   </footer>
-
-</div>
 </body>
 </html>
