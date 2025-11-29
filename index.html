@@ -4,55 +4,55 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Wearable.Creditcard – Paying With Watches, Rings & Devices</title>
-  <meta name="description" content="Wearable.creditcard explains how credit-card payments work via watches, rings and other wearables: tokenization, security, limits and real-world use cases." />
+  <title>Wearable.Creditcard – How Smartwatch & Wearable Payments Work</title>
+  <meta name="description" content="Learn how wearable payments function on credit cards: tokenization, NFC, secure elements, tap-to-pay limits, compatibility and fraud protection." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://wearable.creditcard/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Wearable.Creditcard – Wearable Card Payments Explained" />
-  <meta property="og:description" content="Understand how card payments work from wearables: watches, rings and other devices using tokenization, wallets and secure elements." />
+  <meta property="og:title" content="Wearable.Creditcard – Smartwatch & Wearable Card Payments Explained" />
+  <meta property="og:description" content="Independent explanation of how wearables like smartwatches and fitness bands process credit-card payments using NFC, tokens and secure elements." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://wearable.creditcard/" />
   <meta property="og:image" content="https://choose.creditcard/preview.png?utm_source=wearable.creditcard&utm_medium=referral&utm_campaign=og_image" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Wearable.Creditcard – Paying With Wearables" />
-  <meta name="twitter:description" content="Independent overview of wearable card payments: watches, rings, bands and device-based wallets." />
+  <meta name="twitter:title" content="Wearable.Creditcard – Smartwatch & Wearable Card Payments Explained" />
+  <meta name="twitter:description" content="Understand how wearable payments rely on tokenization, device security and NFC rails to complete transactions safely." />
   <meta name="twitter:image" content="https://choose.creditcard/preview.png?utm_source=wearable.creditcard&utm_medium=referral&utm_campaign=twitter_image" />
 
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-64FE63JQ3H"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-64FE63JQ3H');
   </script>
 
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Shared styles -->
   <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body class="bg-slate-950 text-slate-100">
-
 <header class="site-header">
   <div class="nav-inner max-w-6xl">
-
     <div class="brand">
       <div class="cc-logo">CC</div>
       <div class="brand-text">
         <div class="brand-title">Wearable.Creditcard</div>
-        <div class="brand-subtitle">Paying With Watches & Devices</div>
+        <div class="brand-subtitle">Smartwatch & Wearable Payments</div>
       </div>
     </div>
-
     <nav class="nav-links">
       <a href="#overview">Overview</a>
-      <a href="#tech">Tech</a>
+      <a href="#mechanics">How It Works</a>
       <a href="#compare">Compare</a>
     </nav>
-
   </div>
 </header>
 
@@ -61,184 +61,162 @@
   <div class="cc-breadcrumb">
     <a href="https://choose.creditcard/?utm_source=wearable.creditcard&utm_medium=referral&utm_campaign=breadcrumb">Home</a>
     &nbsp;›&nbsp;
-    Wearable Payments
+    Wearable.Creditcard
   </div>
 
   <!-- Hero -->
   <section class="hero">
-    <h1>How Wearable Card Payments Actually Work</h1>
-    <p class="hero-lead">
-      Wearable.Creditcard explains how watches, rings and other devices can act as your card: tokenization, secure elements, limits, real-world reliability and what to consider before relying on them.
-    </p>
-
-    <a class="cta" href="https://choose.creditcard/?utm_source=wearable.creditcard&utm_medium=referral&utm_campaign=hero_cta">
-      Compare wearable-friendly cards
-    </a>
+    <div class="hero-content">
+      <h1>How Wearable Credit-Card Payments Actually Work</h1>
+      <p class="hero-lead">
+        Smartwatches, rings and fitness bands can process real credit-card transactions without exposing your card number. This page explains the NFC signals, tokenized credentials and secure elements that make wearable payments safe, fast and convenient.
+      </p>
+      <a class="cta" href="https://choose.creditcard/?utm_source=wearable.creditcard&utm_medium=referral&utm_campaign=hero_cta">
+        Compare wearable-ready cards
+      </a>
+    </div>
   </section>
 
-  <!-- Sections -->
+  <!-- Overview -->
   <section id="overview" class="section">
     <h2>What Counts as a Wearable Payment?</h2>
-    <p>Wearable payments happen when your card credentials live inside a device you wear instead of the plastic card itself. Common examples:</p>
-
-    <ul class="list">
-      <li>Smartwatches linked to a wallet (Apple Watch, Wear OS, etc.).</li>
-      <li>Payment rings & bands with integrated secure chips.</li>
-      <li>Fitness trackers or other devices with NFC payment modules.</li>
-    </ul>
-
-    <p>The terminal still sees a standard contactless card transaction — the difference lies in where the card token is stored and how it is authenticated.</p>
+    <p>Wearable payments happen when a smartwatch, fitness tracker, payment ring or similar device transmits a tokenized version of your credit-card credentials at a terminal. Instead of storing your card number, the device uses a unique payment token provisioned by your issuer or wallet provider.</p>
+    <p>These tokens allow the device to mimic a contactless card, but with stronger security: if stolen or copied, they can be revoked instantly without replacing your physical card.</p>
   </section>
 
-  <section id="tech" class="section">
-    <h2>Secure Elements, Tokens & Wallets</h2>
-    <p>Under the hood, most wearable card payments rely on:</p>
+  <!-- Mechanics -->
+  <section id="mechanics" class="section">
+    <h2>How Wearable Payments Flow at the Terminal</h2>
+    <p>When you tap a wearable, it sends an NFC signal carrying a token and cryptographic authentication data. The terminal forwards this through the payment gateway to the card network, which checks with your issuer whether the token is valid and unblocked.</p>
+    <p>The issuer verifies the token, applies fraud and risk scoring, and approves or declines. All this happens in a fraction of a second — similar to contactless card transactions, but using a more secure credential stored in the device’s secure element.</p>
+  </section>
 
-    <ul class="list">
-      <li><strong>Secure elements:</strong> tamper-resistant hardware chips storing payment tokens.</li>
-      <li><strong>Network tokens:</strong> card-network issued substitutes for your real card number.</li>
-      <li><strong>Wallet provisioning:</strong> issuer and network approve each device before it can pay.</li>
-    </ul>
-
-    <p>When you tap your watch or ring, the device sends a tokenized “card” to the terminal using NFC, not your raw PAN.</p>
+  <!-- Section -->
+  <section class="section">
+    <h2>Device Security, Tokens & Authentication</h2>
+    <p>Wearables rely on a “secure element”, a small tamper-resistant chip that stores your tokenized credentials. This ensures that even if the device is compromised, the actual card number is never exposed.</p>
+    <p>Most wearables require device-level authentication (PIN, pattern, or wrist detection) to unlock payment mode. If removed from your wrist, the device usually disables payments until you authenticate again.</p>
   </section>
 
   <section class="section">
-    <h2>Authentication on Wearables</h2>
-    <p>Authentication flows differ slightly from phone-based wallets:</p>
-
-    <ul class="list">
-      <li>Many watches use a <strong>wrist detection + PIN</strong> model: unlock once, stay trusted while worn.</li>
-      <li>Rings and minimalist wearables may rely on phone-level authentication at provisioning time.</li>
-      <li>Back-end systems still run risk checks and may require SCA on the paired phone for some transactions.</li>
-    </ul>
-
-    <p>This design aims to balance convenience (tap and go) with strong security for adding and managing cards.</p>
+    <h2>Limits, Compatibility & Real-World Constraints</h2>
+    <p>Not all wearables support all card networks or issuers. Some rely on Apple Pay or Google Wallet provisioning; others use proprietary tokenization platforms. Compatibility varies by region, device model and card type.</p>
+    <p>Tap-to-pay limits, offline transaction caps and merchant terminal configurations may also affect acceptance — especially in countries with older terminals or strict SCA rules.</p>
   </section>
 
-  <section class="section">
-    <h2>Limits, Offline Behaviour & Reliability</h2>
-    <p>Wearables inherit many properties from standard contactless cards, with some nuances:</p>
-
-    <ul class="list">
-      <li>Contactless limits from the card scheme and local regulation still apply.</li>
-      <li>In semi-offline environments (e.g. transport), wearables behave similar to cards or phones.</li>
-      <li>If the device battery dies, the payment function usually stops working.</li>
-      <li>Some devices support multiple cards and can switch between them, others are single-card.</li>
-    </ul>
-
-    <p>For critical travel or high-value purchases, you should still carry at least one physical backup card.</p>
-  </section>
-
-  <!-- Comparison Table -->
+  <!-- Comparison -->
   <section id="compare" class="section">
-    <h2>Comparing Wearable-Friendly Card & Issuer Support</h2>
+    <h2>Compare Wearable Payment Capabilities</h2>
 
     <div class="table-wrap">
       <table class="table">
         <thead>
-          <tr>
-            <th>Wearable Aspect</th>
-            <th>Strong Ecosystem</th>
-            <th>Weak Ecosystem</th>
-          </tr>
+        <tr>
+          <th>Feature</th>
+          <th>What to Look For</th>
+          <th>Why It Matters</th>
+        </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Supported Devices</td>
-            <td>Multiple watch platforms, rings & bands</td>
-            <td>Limited to one brand or none</td>
-          </tr>
-          <tr>
-            <td>Provisioning UX</td>
-            <td>Fast, in-app provisioning with clear status</td>
-            <td>Manual steps, errors, unclear messages</td>
-          </tr>
-          <tr>
-            <td>Security Model</td>
-            <td>Hardware secure element, tokens, strong SCA</td>
-            <td>Weak binding, poor or unclear auth</td>
-          </tr>
-          <tr>
-            <td>Travel Reliability</td>
-            <td>Good acceptance across terminals & regions</td>
-            <td>Frequent declines overseas or in transit</td>
-          </tr>
-          <tr>
-            <td>Controls & Visibility</td>
-            <td>Transparent device list, easy removals</td>
-            <td>No clear way to revoke a device</td>
-          </tr>
+        <tr>
+          <td>Supported Wallets</td>
+          <td>Apple Pay, Google Wallet, Garmin Pay, Fitbit Pay, proprietary rings</td>
+          <td>Determines whether your wearable can store payment tokens.</td>
+        </tr>
+        <tr>
+          <td>Secure Element Type</td>
+          <td>On-device SE vs. cloud-based tokenization</td>
+          <td>Impacts fraud resistance and offline tap performance.</td>
+        </tr>
+        <tr>
+          <td>NFC Capabilities</td>
+          <td>Range, reliability and terminal compatibility</td>
+          <td>Essential for quick, successful tap-to-pay interactions.</td>
+        </tr>
+        <tr>
+          <td>Authentication Rules</td>
+          <td>Wrist detection, unlock windows, biometric pairing</td>
+          <td>Affects convenience and security during everyday use.</td>
+        </tr>
+        <tr>
+          <td>Card Network Support</td>
+          <td>Visa, Mastercard, Amex, regional networks</td>
+          <td>Ensures your card can be added to the wearable in your region.</td>
+        </tr>
         </tbody>
       </table>
     </div>
 
     <p class="small">
-      To compare cards by digital wallet & wearable support, visit  
+      For live comparisons and issuer support lists, visit  
       <a href="https://choose.creditcard/?utm_source=wearable.creditcard&utm_medium=referral&utm_campaign=comparison_section">
         Choose.Creditcard
       </a>.
     </p>
   </section>
 
-  <!-- Cluster Links -->
+  <!-- Cluster -->
   <section class="section">
-    <h2>Explore Related Digital & Identity Microsites</h2>
+    <h2>Explore Related Payment Technologies</h2>
 
     <div class="cluster-grid">
       <a class="cluster-card" href="https://nfc.creditcard/?utm_source=wearable.creditcard&utm_medium=referral&utm_campaign=cluster_nfc">
         <h3>NFC.Creditcard</h3>
-        <p>The contactless technology powering wearables.</p>
+        <p>The communication layer that powers contactless wearables.</p>
+      </a>
+
+      <a class="cluster-card" href="https://tap.creditcard/?utm_source=wearable.creditcard&utm_medium=referral&utm_campaign=cluster_tap">
+        <h3>Tap.Creditcard</h3>
+        <p>Understanding tap-to-pay limits and offline approvals.</p>
       </a>
 
       <a class="cluster-card" href="https://digitalpay.creditcard/?utm_source=wearable.creditcard&utm_medium=referral&utm_campaign=cluster_digitalpay">
         <h3>DigitalPay.Creditcard</h3>
-        <p>Digital-first payments across apps & web.</p>
+        <p>Tokenized credentials, wallets and digital-first card usage.</p>
       </a>
 
       <a class="cluster-card" href="https://virtualpay.creditcard/?utm_source=wearable.creditcard&utm_medium=referral&utm_campaign=cluster_virtualpay">
         <h3>VirtualPay.Creditcard</h3>
-        <p>Virtual cards and stored credentials.</p>
+        <p>How virtual card numbers integrate with wearables.</p>
       </a>
 
-      <a class="cluster-card" href="https://access.creditcard/?utm_source=wearable.creditcard&utm_medium=referral&utm_campaign=cluster_access">
-        <h3>Access.Creditcard</h3>
-        <p>Access controls, toggles and limits.</p>
-      </a>
-
-      <a class="cluster-card" href="https://digitalid.creditcard/?utm_source=wearable.creditcard&utm_medium=referral&utm_campaign=cluster_digitalid">
-        <h3>DigitalID.Creditcard</h3>
-        <p>How your digital identity links to cards & devices.</p>
+      <a class="cluster-card" href="https://compare.creditcard/?utm_source=wearable.creditcard&utm_medium=referral&utm_campaign=cluster_compare">
+        <h3>Compare.Creditcard</h3>
+        <p>Side-by-side overview of digital-ready card features.</p>
       </a>
     </div>
   </section>
 
-  <!-- Collection Section -->
+  <!-- Collection -->
   <section class="section">
     <h2>Part of The CreditCard Collection</h2>
     <p class="small">
-      Wearable.Creditcard is the wearable-payments spoke in <strong>The CreditCard Collection</strong>, a network of focused microsites operated by ronarn AS.
+      Wearable.Creditcard is part of <strong>The CreditCard Collection</strong> — independent educational microsites by ronarn AS. Each page explains a single financial or payment-technology concept in clear language.
     </p>
     <p class="small">
-      We explain how wearable payments behave, so you can decide when they’re enough — and when you still need plastic in your wallet.
+      We do not issue cards or operate payment systems. All content is informational and based on public documentation.
     </p>
     <p class="small">
-      For unbiased card comparisons, visit  
-      <a href="https://choose.creditcard/?utm_source=wearable.creditcard&utm_medium=referral&utm_campaign=collection_section">
-        Choose.Creditcard
-      </a>.
+      Always verify compatibility and security requirements with your card issuer and wearable manufacturer.
     </p>
+
+    <!-- REQUIRED HUB SNIPPET — Technology hub -->
+    <div class="hub-link">
+      <a href="https://choose.creditcard/technology/?utm_source=wearable.creditcard&utm_medium=referral&utm_campaign=minisite_to_hub"
+         class="text-sm text-slate-600 hover:text-slate-900">
+        Learn more at the Technology hub
+      </a>
+    </div>
   </section>
 
   <!-- Bottom CTA -->
   <section class="section">
-    <h2>Choose Cards That Work With Your Wearables</h2>
+    <h2>Ready to Use Your Wearable for Payments?</h2>
     <p class="small">
-      If you want to pay from your wrist or ring, check card compatibility before you apply — not after you land at the terminal.
+      Use Wearable.Creditcard to understand the payment stack — then explore wearable-ready card issuers at the main hub.
     </p>
-
     <a class="cta" href="https://choose.creditcard/?utm_source=wearable.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
-      Compare wearable-ready cards
+      Go to Choose.Creditcard
     </a>
   </section>
 
